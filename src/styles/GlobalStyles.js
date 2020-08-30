@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export default createGlobalStyle`
 *,
 *::before,
@@ -23,5 +24,22 @@ body {
 h1,h2,h3,h4,h5 {
     font-weight: 700;
 }
-
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
 `
+
+const theme = {
+    colors: {
+        primary: '#890707',
+        secondary: '#e8d2a3',
+        white: '#ffffff',
+        black: '#000000'
+    }
+}
+
+export { theme }
