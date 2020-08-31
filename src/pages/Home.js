@@ -1,7 +1,11 @@
 import React from 'react';
+import { Header, Footer } from '../layouts'
 
 export default () => {
     return (
-        <div>Home Page</div>
+        <>
+            <Header />
+            <Footer />
+        </>
     )
 }

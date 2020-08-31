@@ -7,6 +7,7 @@ const Navigation = styled.nav`
     padding: 2rem 2.5rem;
     width: 40%;
     background: ${({ theme: { colors } }) => colors.primary};
+    z-index: 1000;
 
     ul {
         li {
@@ -17,6 +18,7 @@ const Navigation = styled.nav`
                 padding: .5rem 0;
                 text-transform: capitalize;
                 color: ${({ theme }) => theme.colors.white};
+                transition: all .3s ease;
                 
                  &:hover {
                      border: none;

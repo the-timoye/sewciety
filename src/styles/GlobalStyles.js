@@ -19,6 +19,9 @@ body {
     font-size: 1.4rem;
     line-height: 1.17;
     font-weight: 400;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    background-color: ${({ theme: { colors } }) => colors.secondary};
 }
 
 h1,h2,h3,h4,h5 {
@@ -36,6 +39,7 @@ ul {
 const theme = {
     colors: {
         primary: '#890707',
+        primary_faded: 'rgba(137, 7, 7, 0.7)',
         secondary: '#e8d2a3',
         white: '#ffffff',
         black: '#000000'
