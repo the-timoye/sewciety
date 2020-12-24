@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import bgImage from '../assets/images/milola-header-image.jpg'
+import { theme } from './GlobalStyles';
 
 const HomeBanner = styled.header`
-    width: 100vw;
+    /* width: 100vw; */
     height: 95vh;
     display: flex;
     justify-content: flex-start;
@@ -27,6 +28,7 @@ const HomeBanner = styled.header`
             margin: 1rem;
             margin-bottom: 3rem;
             letter-spacing: 5px;
+            color: ${({ theme: { colors } }) => colors.white};
         }
     }
 `;

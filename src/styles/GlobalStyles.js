@@ -21,11 +21,15 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     overflow-x: hidden;
-    background-color: ${({ theme: { colors } }) => colors.secondary};
 }
 
 h1,h2,h3,h4,h5 {
     font-weight: 700;
+}
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #890707;
 }
 a {
     cursor: pointer;
