@@ -11,48 +11,24 @@ const Portfolio = styled.div`
     background: rgba(137, 7, 7, 0.06);
  `;
 
-const ImagesContainer = styled.div`
+
+const CenterImages = styled.div`
+    width: 85rem;
     margin: 5rem 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 1rem;
 
-    div {
-        margin: 0 .3rem .3rem .3rem;
-        width: 25rem;
-        /* height: 30rem; */
-            &.center{
-                width: 45rem;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap; 
-                justify-content: space-between; 
-                img {
-                    width: 49%;
-                    margin-bottom: .3rem;
-                }
-            }
-            &.left-side {
-                align-self: flex-start;
-                margin-right: auto;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            &.right-side {
-                align-self: flex-start;
-                margin-left: auto;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    img {
+        width: 20rem;
+        margin-bottom: 0.5rem;
     }
 
+    img:not(:nth-child(4)) {
+        margin-right: 0.5rem;
+    }
 
 `;
 
-export { Portfolio, ImagesContainer };
+export { Portfolio, CenterImages };

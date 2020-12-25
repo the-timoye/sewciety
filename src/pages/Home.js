@@ -1,13 +1,11 @@
 import React from 'react';
 import { Header, Footer, About } from '../layouts';
-import { Portfolio, sectionHeader as Title, ImagesContainer, Contact, MarginBottom, Button } from '../assets/styles';
+import { Portfolio, sectionHeader as Title, CenterImages, Contact, MarginBottom, Button } from '../assets/styles';
 import bgImage from '../assets/images/milola-header-image.jpg'
 import phone from '../assets/images/phone.png';
 
 const images = [
-    bgImage, bgImage, bgImage, bgImage, bgImage, bgImage, bgImage,
-    bgImage, bgImage, bgImage, bgImage, bgImage, bgImage,
-    bgImage, bgImage
+    bgImage, bgImage, bgImage, bgImage, bgImage, bgImage, bgImage, bgImage
 ]
 
 export default () => {
@@ -17,35 +15,13 @@ export default () => {
             <About />
             <Portfolio>
                 <Title>OUR PORTFOLIO</Title>
-                <ImagesContainer>
-                    <div class="left-side">
-                        {images.map((image, index) => {
-
-                            if ((index === 0) || (index % 6 === 0)) {
-                                return <img key={index} src={image} alt={`${image}-${index}`} />
-                            }
-
-                        })}
-                    </div>
-
-                    <div class="center">
-                        {images.map((image, index) => {
-                            if ((index !== 0) && (index % 6 !== 0) && (index % 3 !== 0)) {
-                                return <img key={index} src={image} alt={`${image}-${index}`} />
-                            }
-
-                        })}
-                    </div>
-                    <div class="right-side">
-                        {images.map((image, index) => {
-
-                            if ((index !== 0) && (index % 3 === 0) && (index % 6 !== 0)) {
-                                return <img key={index} src={image} alt={`${image}-${index}`} />
-                            }
-
-                        })}
-                    </div>
-                </ImagesContainer>
+                <CenterImages>
+                    {images.map((image, index) => {
+                        return (
+                            <img src={image} alt={index} />
+                        )
+                    })}
+                </CenterImages>
             </Portfolio>
 
             <Contact>
