@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Footer, About } from '../layouts';
-import { Portfolio, sectionHeader as Title, ImagesContainer, Contact, MarginBottom, Button } from '../styles';
+import { Portfolio, sectionHeader as Title, ImagesContainer, Contact, MarginBottom, Button } from '../assets/styles';
 import bgImage from '../assets/images/milola-header-image.jpg'
 import phone from '../assets/images/phone.png';
 

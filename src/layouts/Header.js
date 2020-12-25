@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeBanner, Button } from '../styles';
+import { HomeBanner, Button } from '../assets/styles';
 
 export const Header = () => {
     return (

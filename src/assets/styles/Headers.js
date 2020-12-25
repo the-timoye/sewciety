@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import bgImage from '../assets/images/milola-header-image.jpg'
-import { theme } from './GlobalStyles';
+import bgImage from '../images/milola-header-image.jpg';
+// import { theme } from './GlobalStyles';
 
 const HomeBanner = styled.header`
     /* width: 100vw; */

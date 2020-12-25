@@ -1,5 +1,5 @@
 import React from 'react';
-import { About as AboutStyles, Button, CompanyBrief } from '../styles';
+import { About as AboutStyles, Button, CompanyBrief } from '../assets/styles';
 
 export const About = () => {
     return (

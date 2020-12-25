@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation } from '../styles';
+import { Navigation } from '../assets/styles';
 import { Link } from 'react-router-dom'
 
 const navItems = ['home', 'about', 'portfolio', 'shop', 'contact'];
