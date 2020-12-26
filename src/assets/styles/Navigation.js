@@ -10,21 +10,28 @@ const Navigation = styled.nav`
     z-index: 1000;
 
     ul {
+        display: flex;
+        justify-content: space-between;
         li {
             display: inline-block;
+            padding: .5rem 0;
+
+            hr {
+                    display: none;
+                    border-bottom: 1px solid ${({ theme: { colors } }) => colors.white};
+                    margin-top: 5px;
+                    width: 100%;
+                }
             
              a {
-                 margin-right: 2rem;
-                padding: .5rem 0;
                 text-transform: capitalize;
                 color: ${({ theme }) => theme.colors.white};
-                transition: all .3s ease;
-                
-                 &:hover {
-                     border: none;
-                     border-bottom: 2px solid ${({ theme: { colors } }) => colors.white};
-                 }
             }
+
+            &:hover hr{
+                     display: block;
+                     border-bottom: 1px solid ${({ theme: { colors } }) => colors.white};
+                 }
         }
     }
 `;

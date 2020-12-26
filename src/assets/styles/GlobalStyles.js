@@ -12,6 +12,8 @@ export default createGlobalStyle`
 
 html {
     font-size: 62.5%; /* 10px == 1rem */
+    scroll-behavior: smooth;
+    transition: scroll  2s ease;
 }
 
 body {

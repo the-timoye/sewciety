@@ -13,18 +13,18 @@ export default () => {
         <>
             <Header />
             <About />
-            <Portfolio>
+            <Portfolio id="portfolio">
                 <Title>OUR PORTFOLIO</Title>
                 <CenterImages>
                     {images.map((image, index) => {
                         return (
-                            <img src={image} alt={index} />
+                            <img src={image} alt={index} key={index} />
                         )
                     })}
                 </CenterImages>
             </Portfolio>
 
-            <Contact>
+            <Contact id="contact">
                 <section className="contact-section-one">
                     <img src={phone} alt="telephone" />
                     <div>
