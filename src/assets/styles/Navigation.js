@@ -10,6 +10,10 @@ const Navigation = styled.nav`
     background: ${({ theme: { colors } }) => colors.primary};
     z-index: 1000;
 
+    ${breakpoint('tab_portrait')`
+        width: 50%;
+    `};
+
     ${breakpoint('desktop')`
         width: 40%;
     `};

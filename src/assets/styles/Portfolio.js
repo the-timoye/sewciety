@@ -27,6 +27,7 @@ const CenterImages = styled.div`
 
     ${breakpoint('desktop')`
         width: 85rem;
+        
     `};
 
     img {

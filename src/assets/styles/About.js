@@ -10,6 +10,10 @@ const About = styled.div`
     align-items: center;
     background: ${({ theme: { colors } }) => colors.white};
 
+    ${breakpoint('tab_portrait')`
+        height: 35rem;
+    `};
+
     ${breakpoint('desktop')`
         height: 35rem;
     `};
@@ -20,6 +24,11 @@ const About = styled.div`
         margin: 20rem auto 0 auto;
         
 
+        ${breakpoint('tab_portrait')`
+            width: 50%;
+            margin: 0;
+            margin-left: 4rem;
+        `};
         ${breakpoint('desktop')`
             width: 35%;
             margin: 0;
@@ -47,6 +56,11 @@ const CompanyBrief = styled.div`
     text-align: center;
     background-color: ${({ theme: { colors } }) => colors.white};
     box-shadow: -3px 5px 15px 0 ${({ theme: { colors } }) => colors.primary_faded};
+
+    ${breakpoint('tab_portrait')`
+        top: -5rem;
+        left: 65%;
+        `};
 
     ${breakpoint('desktop')`
         top: -5rem;

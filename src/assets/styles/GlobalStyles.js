@@ -11,9 +11,9 @@ const theme = {
     },
     breakpoints: {
         s_phone: 0,
-        phone: 576,
-        tab_portrait: 768,
-        tab_landscape: 992,
+        phone: 480,
+        tab_portrait: 800,
+        tab_landscape: 1024,
         desktop: 1200,
     },
 }
@@ -33,10 +33,13 @@ html {
     scroll-behavior: smooth;
     transition: scroll  2s ease;
 
-    ${breakpoint('desktop')`
-        font-size: 62.5%; /* 10px == 1rem */
-    `};
 
+    ${breakpoint('tab_portrait')`
+        font-size: 50%;
+    `};
+    ${breakpoint('desktop')`
+        font-size: 62.5%;
+    `};
 }
 
 body {
@@ -46,6 +49,10 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     overflow-x: hidden;
+
+    ${breakpoint('tab_portrait')`
+        font-size: 1.3rem;
+    `};
 
     ${breakpoint('desktop')`
         font-size: 1.4rem; /* 10px == 1rem */

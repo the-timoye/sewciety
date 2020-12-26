@@ -9,9 +9,10 @@ const Footer = styled.footer`
     align-items: center;
     background: ${({ theme: { colors } }) => colors.primary};
 
-    ${breakpoint('desktop')`
+    ${breakpoint('tab_portrait')`
         flex-direction: row;
     `};
+
     p {
         color: ${({ theme: { colors } }) => colors.white};
     }

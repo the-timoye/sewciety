@@ -8,15 +8,16 @@ flex-wrap: wrap;
 .contact-section-one {
     width: 100%;
     background: rgba(137, 7, 7, 0.5);
+
+    ${breakpoint('tab_portrait')`
+        width:35%;
+    `};
+
     ${breakpoint('desktop')`
         width:50%;
     `};
     img {
         width: 100%;
-
-        ${'' /* ${breakpoint('desktop')`
-            width:100%;
-        `}; */}
     }
 
 }
