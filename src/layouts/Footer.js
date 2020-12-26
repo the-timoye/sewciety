@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <FooterStyles>
             <p>Copyright 2020 MilolaSewciety</p>
-            <p>Designed and Developed by <a href='mailto:thetimoye@gmail.com'>thetimoye</a></p>
+            <p>Designed and Developed by <a href='https://thetimoye.netlify.app' target='_blank' rel='noopener noreferrer'>thetimoye</a></p>
         </FooterStyles>
     );
 };

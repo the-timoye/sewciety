@@ -44,7 +44,7 @@ const HomeBanner = styled.header`
             letter-spacing: 3px;
         }
         p {
-            margin: 1rem;
+            margin-top: 1rem;
             margin-bottom: 3rem;
             letter-spacing: 5px;
             color: ${({ theme: { colors } }) => colors.white};
