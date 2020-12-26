@@ -3,20 +3,39 @@ import bgImage from '../images/milola-header-image.jpg';
 // import { theme } from './GlobalStyles';
 
 const HomeBanner = styled.header`
-    /* width: 100vw; */
+    position: relative;
     height: 95vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgImage});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #f7f7f7;
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
 
+    .alice-carousel ul li {
+        ${'' /* width: 100%; */}
+        height: 95vh;
+    }
+
+    .alice-carousel ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slides-overlay {
+        position: absolute;
+        top: 0;
+        height: 95vh;
+        WIDTH: 100%;
+        background: #000000ab;
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+
+    }
+
     .landing-info-container {
-        margin-left: 3rem;
-        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 3rem;
         color: #fff;
         text-transform: uppercase;
         h2 {
@@ -32,5 +51,7 @@ const HomeBanner = styled.header`
         }
     }
 `;
+
+
 
 export { HomeBanner };
