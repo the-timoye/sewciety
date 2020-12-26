@@ -31,10 +31,18 @@ const CompanyBrief = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    text-align: center;
     background-color: ${({ theme: { colors } }) => colors.white};
     box-shadow: -3px 5px 15px 0 ${({ theme: { colors } }) => colors.primary_faded};
 
+    img {
+        width: 5rem;
+    }
+
     .read-more-button {
+        width: 100%;
         padding: 5.7%;
         text-align: center;
         color: ${({ theme: { colors } }) => colors.white};
