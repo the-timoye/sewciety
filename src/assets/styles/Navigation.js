@@ -1,13 +1,18 @@
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 const Navigation = styled.nav`
     position: fixed;
     top: 0;
     right: 0;
     padding: 2rem 2.5rem;
-    width: 40%;
+    width: 80%;
     background: ${({ theme: { colors } }) => colors.primary};
     z-index: 1000;
+
+    ${breakpoint('desktop')`
+        width: 40%;
+    `};
 
     ul {
         display: flex;

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 const About = styled.div`
-    height: 35rem;
+    height: 80rem;
     margin-top: 5rem;
     margin: 0;
     position: relative;
@@ -9,11 +10,21 @@ const About = styled.div`
     align-items: center;
     background: ${({ theme: { colors } }) => colors.white};
 
+    ${breakpoint('desktop')`
+        height: 35rem;
+    `};
+
     .about-text-content {
-        width: 35%;
+        width: 85%;
         display: block;
+        margin: 20rem auto 0 auto;
         
-        margin-left: 12rem;
+
+        ${breakpoint('desktop')`
+            width: 35%;
+            margin: 0;
+            margin-left: 12rem;
+        `};
 
         p {
             margin: 3rem 0;
@@ -26,8 +37,8 @@ const CompanyBrief = styled.div`
     height: 45rem;
     width: 30rem;
     position: absolute;
-    top: -5rem;
-    right: 10%;
+    top: -15rem;
+    left: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,6 +47,12 @@ const CompanyBrief = styled.div`
     text-align: center;
     background-color: ${({ theme: { colors } }) => colors.white};
     box-shadow: -3px 5px 15px 0 ${({ theme: { colors } }) => colors.primary_faded};
+
+    ${breakpoint('desktop')`
+        top: -5rem;
+        left: 70%;
+        `};
+    
 
     img {
         width: 5rem;

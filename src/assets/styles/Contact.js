@@ -1,14 +1,22 @@
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 export const Contact = styled.div`
 display: flex;
 flex-wrap: wrap;
 
 .contact-section-one {
-    width: 50%;
+    width: 100%;
     background: rgba(137, 7, 7, 0.5);
+    ${breakpoint('desktop')`
+        width:50%;
+    `};
     img {
         width: 100%;
+
+        ${'' /* ${breakpoint('desktop')`
+            width:100%;
+        `}; */}
     }
 
 }
